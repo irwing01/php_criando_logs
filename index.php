@@ -56,10 +56,10 @@ fclose($arquivo);
 </fieldset>
 
 <?php
-//$conn = new PDO("mysql:dbname=testes;host=localhost","root","");
-//$stmt = $conn->prepare("select * from tb_usuarios");
-//$res = $stmt->fetchAll(PDO::FETCH_OBJ);
-//
-//var_dump($res);
-//var_dump($conn);
+$conn = new PDO("mysql:dbname=testes;host=localhost","root","");
+$stmt = $conn->prepare("select * from tb_usuarios");
+$res = $stmt->fetchAll(PDO::FETCH_OBJ);
+
+var_dump($res);
+var_dump($conn);
 ?>
